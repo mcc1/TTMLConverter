@@ -1,2 +1,2 @@
 # TTMLConverter
-Simple TTML Converter
+A simple applictaion which convet TTML subtitle to other subtitle format
