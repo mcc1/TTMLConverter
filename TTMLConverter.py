@@ -4,7 +4,7 @@ import argparse
 import xml.etree.ElementTree as et
 
 
-class ttmlConverter:
+class TTMlConverter:
     """
     Simple Converter which can convert TTML subtitle to other subtitle formats.
     """
@@ -46,6 +46,6 @@ if __name__ == '__main__':
     parser.add_argument('output', type=str, help='output file')
     args = parser.parse_args()
 
-    c = ttmlConverter()
+    c = TTMlConverter()
     subs = c.read(args.input)
     c.srt_writer(subs, args.output)
