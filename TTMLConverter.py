@@ -17,7 +17,7 @@ class TTMlConverter:
         s = int(tmp) % 60
         m = int(tmp) % 3600 / 60
         h = int(tmp) / 3600
-        return "{:02d}:{:02d}:{:02d},{:03d}".format(h, m, s, int(ns))
+        return "{:02d}:{:02d}:{:02d},{:<03d}".format(h, m, s, int(ns))
 
     def read(self, input_file):
         ns = {'tt': "http://www.w3.org/ns/ttml"}
